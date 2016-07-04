@@ -137,40 +137,40 @@ public class DeviceTester {
         
         final String densityStr = density;
         hi.getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_SEND, e -> {
-            StringBuilder body = new StringBuilder("Density").
+            StringBuilder body = new StringBuilder("Density: ").
                 append(densityStr).
                 append("\n").
-                append("Platform Name:").
+                append("Platform Name: ").
                 append(d.getPlatformName()).
                 append("\n").
-                append("User Agent:").
+                append("User Agent: ").
                 append(d.getProperty("User-Agent", "")).
                 append("\n").
-                append("OS:").
+                append("OS: ").
                 append(d.getProperty("OS", "")).
                 append("\n").
-                append("OS Version:").
+                append("OS Version: ").
                 append(d.getProperty("OSVer", "")).
                 append("\n").
-                append("UDID:").
+                append("UDID: ").
                 append(d.getUdid()).
                 append("\n").
-                append("MSISDN:").
+                append("MSISDN: ").
                 append(d.getMsisdn()).
                 append("\n").
-                append("Display Width X Height:").
+                append("Display Width X Height: ").
                 append(d.getDisplayWidth()).append("X").append(d.getDisplayHeight()).
                 append("\n").
-                append("1mm In Pixels:").
+                append("1mm In Pixels: ").
                 append(l10n.format(pixelsPerMM)).
                 append("\n").
-                append("Language:").
-                append(new SpanLabel(l10n.getLanguage())).
+                append("Language: ").
+                append(l10n.getLanguage()).
                 append("\n").
-                append("Locale:").
+                append("Locale: ").
                 append(l10n.getLocale()).
                 append("\n").
-                append("Currency Symbol:").
+                append("Currency Symbol: ").
                 append(l10n.getCurrencySymbol()).
                 append("\nAre Mutable Images Fast: ").
                 append(d.areMutableImagesFast()).
